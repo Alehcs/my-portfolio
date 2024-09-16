@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alejandro Cornejo - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Alejandro Cornejo
+          <div class="contact_info">
+            <img src="envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          alejandro.cornejog4@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +56971757036
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="avatar.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Alejandro! <img src="waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 1 years of experience in both application and presentation layers.
+            I have worked on applications and web development. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="all_skills">
+            <div class="skill">
+              <img src="css3-logo.png"/>
+              <h6>CSS</h6>
+              <p>1 years experience</p>
+            </div>  
+
+        <div class="all_skills">
+            <div class="skill">
+                <img src="react.png"/>
+                <h6>React</h6>
+                <p>1 years experience</p>
+            </div>
+        
+        <div class="all_skills">
+            <div class="skill">
+                <img src="python.png"/>
+                <h6>Python</h6>
+                <p>1 years experience</p>
+            </div>  
+        
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Transport application</h3>
+            <ul>
+              <li>Developed a transport application for pay and geolocalization</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>working with ndvi data and plant humidity</h3>
+            <ul>
+              <li>Develop an application that is responsible for analyzing the humidity of the plants and the land in which they are located</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Transport website</h3>
+            <ul>
+              <li>I created a page for my transportation and geolocation applicationcoin</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Alejandro is someone who learns very quickly and adapts quickly to technologies.
+          He has a good attitude and work ethic, a good team player.
+          He is interested in learning and learning about new technologies. 
+          He can organize and lead a team in order to give direction to the project.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Alejandro has been an awesome experience. 
+          He is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Alejandro during the initial phase of our venture which needed Project development. 
+          He is a committed resource who has in depth knowledge about the domain. 
+          He will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+        <div class="flex_center">
+          <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="50" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+      
+
+    <div class="iconbutton">
+        <a href="#home">
+          <img src="home.png" alt="Logo" style="width: 40px; height: 40px;">
+        </a>
+      </div>
+      
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="flash.png"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
